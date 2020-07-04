@@ -25,9 +25,13 @@ There are no known bugs in this application.
 
 ### Technologies Used
 Python3.8
+
 Flask
+
 HTML5
+
 CSS3
+
 Bootstrap
 
 ### Setup /Installation Requirements
