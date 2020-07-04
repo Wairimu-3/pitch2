@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+<!-- Styles block -->
+
+
+<!-- Content block -->
+{%block content%}
+<br>
+<div class="container-fluid ">
+    <h1 class="jumbotron text-monospace text-center peach-gradient">MY PITCH PROJECT</h1>
+</div>
+
+<div class="container text-center" style="padding-bottom: 20px;">
+    <a href="{{url_for('main.new_pitch')}}" class="btn blue-gradient">Create pitch</a>
+</div>
+
+<div class="container-fluid" style="font-family: 'Cormorant Upright', serif;">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Card -->
+            <div class="card card-cascade wider">
+
+                <!-- Card image -->
+                <div class="view view-cascade gradient-card-header peach-gradient">
+
+                    <!-- Title -->
+                    <h2 class="card-header-title mb-3 text-monospace text-center">Interview Pitches</h2>
+
+
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body text-center">
+
+                    <!-- Text -->
+                    <p class="card-text text-monospace">A personal pitch is basically a succinct introduction to yourself and your
+                        background. Having an outline pitch ready is a great confidence-booster for graduate interviews,
+                        networking events and careers fairs.</p>
+                    <!-- Link -->
+                    <a href="{{url_for('main.interview_pitches')}}" class="orange-text d-flex flex-row-reverse p-2">
+                        <h5 class="btn blue-gradient">Read more<i class="fas fa-angle-double-right ml-2"></i>
+                        </h5>
+                    </a>
+
+                </div>
+                <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+
+        </div>
+        <div class="col-md-4">
+            <!-- Card -->
+            <div class="card card-cascade wider">
+
+                <!-- Card image -->
+                <div class="view view-cascade gradient-card-header peach-gradient">
+
+                    <!-- Title -->
+                    <h2 class="card-header-title mb-3 text-monospace text-center">Product Pitches</h2>
+
+
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body card-body-cascade text-center">
+
+                    <!-- Text -->
+                    <p class="card-text text-monospace">You should be able to
+                        tell the story in the time it takes you to ride an elevator with a prospect.
+                         Salespeople are past the point of giving prospects an hour-long presentation to sell
+                        products or services.</p>
+                    <!-- Link -->
+                    <a href="{{url_for('main.product_pitches')}}" class="orange-text d-flex flex-row-reverse p-2">
+                        <h5 class="btn blue-gradient">Read more<i class="fas fa-angle-double-right ml-2"></i>
+                        </h5>
+                    </a>
+
+                </div>
+                <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+
+        </div>
+        <div class="col-md-4">
+            <!-- Card -->
+            <div class="card card-cascade wider">
+
+                <!-- Card image -->
+                <div class="view view-cascade gradient-card-header peach-gradient">
+
+                    <!-- Title -->
+                    <h2 class="card-header-title mb-3 text-monospace text-center">More coming soon</h2>
+
+
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body card-body-cascade text-center">
+
+                    <!-- Text -->
+                    <p class="card-text text-monospace">
+                        A Quote For You: Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.
+                    </p>
+                    <!-- Link -->
+                    <a href="/" class="orange-text d-flex flex-row-reverse p-2">
+                        <h5 class="btn blue-gradient btn-disabled">More pitches coming Soon</i>
+                        </h5>
+                    </a>
+
+                </div>
+                <!-- Card content -->
+
+            </div>
+            <!-- Card -->
+
+        </div>
+    </div>
+</div>
+{%endblock%}

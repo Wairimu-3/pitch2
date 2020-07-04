@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{%import 'macros.html' as macro%}
+
+{% block content %}
+<div class="container">
+    <br>
+        <div class="card text-center">
+            <!-- displaying  Username-->
+            <h3 class="card-header text-monospace peach-gradient"> Username: {{user.username| capitalize}} </h3>
+        <div class="container card-body card-text text-monospace">
+            <p>Name: {{user.firstname}} {{user.lastname}} </p>
+            <p>No of piches: {{pitches_count}}</p>
+            <p>Date joined: {{date}}</p>
+
+        </div>
+        </div>
+             <h3> Pitches </h3>
+              <hr>
+            <div class="row">
+
+               {{macro.displayPitches(pitches)}}
+            </div>
+
+    </div>
+
+{% endblock %}

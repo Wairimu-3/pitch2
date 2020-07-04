@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+
+    <div class="container" style="margin-top: 8px">
+    <div class="jumbotron text-uppercase text-center text-monospace peach-gradient">
+        register
+    </div>
+    </div>
+<div class="container">
+
+<div class="card text-monospace blue-gradient">
+<div class="container-fluid">
+    {{wtf.quick_form(registration_form)}}
+</div>
+</div>
+</div>
+</div>
+
+{% endblock%}
