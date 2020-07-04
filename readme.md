@@ -51,4 +51,8 @@ Now navigate to your browser at: local host http://127.0.0.1:5000/
 - Email: kimanimargaret46@gmail.com
 
 ### License
-MIT License Copyright (c) [2020] [Margaret Kimani]
+MIT licence
+
+https://choosealicense.com/licenses/mit/
+
+&copy 2020; Margaret Kimani
