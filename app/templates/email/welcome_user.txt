@@ -1,4 +1,4 @@
 Hello {{user.username}}
 Welcome to Royals Pitch
-You can now start sharing your pitches with everyone.
-Have fun.
+We have seen that you have just signed up,you can now start sharing your pitches with everyone.
+Have fun!
