@@ -6,7 +6,7 @@ class Config:
     General configuration parent class
     '''
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maggie:royals@127.0.0.1:5000/moringa?sslmode=require'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:access@127.0.0.1:5000/pitch2'
     UPLOADED_PHOTOS_DEST = 'app/static'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     # email configurations
@@ -23,7 +23,7 @@ class ProdConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maggie:royals@127.0.0.1:5432/moringa?sslmode=require
+    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:access@127.0.0.1:5432/moringa?sslmode=require
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 
@@ -33,7 +33,7 @@ class TestConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://maggie:royals@127.0.0.1:5000/moringa?sslmode=require'
+    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://moringa:access@127.0.0.1:5000/pitch2'
 
 
 class DevConfig(Config):
@@ -42,7 +42,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://maggie:royals@127.0.0.1:5000/moringa?sslmode=require'
+    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://moringa:access@127.0.0.1:5000/pitch2'
 
     DEBUG = True
     ENV = 'development'
