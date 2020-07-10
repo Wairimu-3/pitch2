@@ -48,7 +48,7 @@ Bootstrap
 Now navigate to your browser at: local host http://127.0.0.1:5000/
 
 ### Support and contact details
-For any enquiries please 
+For any enquiries please contact 
 - Email: kimanimargaret46@gmail.com
 
 ### License
